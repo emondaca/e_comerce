@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+    border: 0px;
+    display: grid;
+    grid-template-areas: 
+    'navArea navArea navArea navArea'
+    'asideArea mainArea mainArea mainArea'
+    'asideArea mainArea mainArea mainArea'
+    'asideArea mainArea mainArea mainArea'
+    'footerArea footerArea footerArea footerArea';
+}
+nav {
+    grid-area: navArea;
+    display: flex;
+    flex-flow: row, nowrap;
+    justify-content: center;
+    background-color: rgb(37, 132, 80);
+    color: white;
+
+}
+aside {
+    grid-area: asideArea;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(84, 142, 165);
+
+}
+aside a {
+    font-size: large;
+    color: indigo;
+    padding-left:10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+
+}
+aside a:hover {
+    color: red;
+}
+aside a:focus {
+    color: white;
+}
+aside h1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+
+}
+main {
+    grid-area: mainArea;
+    display: grid;
+    grid-template-areas:
+    '. . .'
+    '. . .' ;
+    gap: 10px;
+    background-color: darkgray;
+}
+footer {
+    grid-area: footerArea;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: rgb(37, 132, 80);
+    color: white;
+}
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content:space-between;
+    background-color: white;
+}
+.item h1 {
+    margin-bottom: 0px;
+}
+.item h3 {
+    color: red;
+    font-size: x-large;
+}
+.item button {
+    width: 100%;
+    min-height: 50px;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color:cyan;
+}
+.item button:hover {
+    background-color:chocolate;
+}
+.item button:focus {
+    background-color:red;
+} 
